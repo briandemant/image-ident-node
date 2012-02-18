@@ -1,8 +1,17 @@
 Image ident for node.js
 =============
 
-.. later
+Tool to identify idential images
 
+
+Ideas (if and when I need this)
+-----
+
+Use canvas to transform the image so that image can be identified if:
+
+* image has been rotated
+* image has been scaled
+* image has had color changes
 
 Usage
 -----

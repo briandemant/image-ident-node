@@ -7,11 +7,10 @@
 	"homepage"       :"http://github.com/briandemant/image-ident-node",
 	"repository"     :{
 		"type":"git",
-		"url" :"http://github.com/briandemant/image-ident-node"
+		"url" :"git://github.com/briandemant/image-ident-node.git"
 	},
 	"dependencies"   :{
-		"exiftags":"git://github.com/briandemant/exiftags-node.git",
-		"canvas"  :"*"
+		"exiftags":"*"
 	},
 	"devDependencies":{
 		"expect.js":">= 0.1.2",

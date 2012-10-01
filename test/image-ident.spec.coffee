@@ -32,6 +32,12 @@ describe 'get info for valid image', ->
 				size : 1699551
 				mtime: map_stats.mtime
 				ctime: map_stats.ctime
+			expect(data['md5']).to.be('b4252a50c59da7d4d808b0332b315bcb')
+			expect(data['info']).to.eql
+				width     : 6400
+				height    : 3200
+				colorspace: 16
+				quality   : 91
 			done()
 
 describe 'get tags for image without exifdata', ->
@@ -42,6 +48,12 @@ describe 'get tags for image without exifdata', ->
 				mtime: noexif_stats.mtime
 				ctime: noexif_stats.ctime
 			expect(data['exif-data']).to.be(false)
+			expect(data['md5']).to.be('886f09ee5ac72b9c7227be25f0363000')
+			expect(data['info']).to.eql
+				width     : 160
+				height    : 120
+				colorspace: 16
+				quality   : 88
 			done()
 
 describe 'get tags for non existing path', ->
@@ -53,3 +65,5 @@ describe 'get tags for non existing path', ->
 				path : 'xxx.jpg'
 			expect(data).to.be(undefined)
 			done()
+
+ 

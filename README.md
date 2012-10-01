@@ -3,6 +3,10 @@ Image ident for node.js
 
 Tool to identify idential images
 
+Dependencies
+-----
+imagemagick
+
 
 Ideas (if and when I need this)
 -----

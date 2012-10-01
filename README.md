@@ -7,11 +7,11 @@ Tool to identify idential images
 Ideas (if and when I need this)
 -----
 
-Use canvas to transform the image so that image can be identified if:
+Use canvas to transform the image so that similar images can be identified if:
 
 * image has been rotated
 * image has been scaled
-* image has had color changes
+* image has had minor color changes
 
 Usage
 -----
@@ -58,19 +58,21 @@ else exif-data will be **false**
 		},
 		exif-data': false
 	}
-
-
-Installation
------------
-
-.. later
-
+ 
 Testing
 -------
 
 the tests are written in mocha and uses expect.js
+ 
+	mocha
+	
+Compiling
+-------
 
-    mocha spec/image-ident.spec.coffee
+The final result is a js file (to avoid coffeescript as runtime dependency). So before committing
+please remember to compile
+
+	coffee -c -o lib/ src/
 
 
 Contributing

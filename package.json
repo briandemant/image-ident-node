@@ -1,19 +1,20 @@
 {
-	"name"           :"image-ident",
-	"description"    :"A tool to identify various variants of the same image",
-	"version"        :"0.1.0",
-	"author"         :"Brian Demant <brian.demant@gmail.com>",
-	"main"           :"./src/image-ident.js",
-	"homepage"       :"http://github.com/briandemant/image-ident-node",
-	"repository"     :{
-		"type":"git",
-		"url" :"git://github.com/briandemant/image-ident-node.git"
+	"name"           : "image-ident",
+	"description"    : "A tool to identify various variants of the same image",
+	"version"        : "0.1.1",
+	"author"         : "Brian Demant <brian.demant@gmail.com>",
+	"main"           : "./src/image-ident.js",
+	"homepage"       : "http://github.com/briandemant/image-ident-node",
+	"repository"     : {
+		"type": "git",
+		"url" : "git://github.com/briandemant/image-ident-node.git"
 	},
-	"dependencies"   :{
-		"exiftags":"*"
+	"dependencies"   : {
+		"exiftags": "git://github.com/briandemant/exiftags-node.git"
 	},
-	"devDependencies":{
-		"expect.js":">= 0.1.2",
-		"mocha"    :">= 0.12.1"
+	"devDependencies": {
+		"expect.js"    : "*",
+		"mocha"        : "*",
+		"coffee-script": "*"
 	}
 }

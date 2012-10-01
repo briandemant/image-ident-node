@@ -9,8 +9,8 @@ exports.info = (path, callback) ->
 		else
 			exiftags.read path, (err, result) ->
 				callback null,
-						'stats'    :
-							'size' : stats['size']
-							'mtime': stats['mtime']
-							'ctime': stats['ctime']
-						'exif-data': (result || false)
+					'stats':
+						'size': stats['size']
+						'mtime': stats['mtime']
+						'ctime': stats['ctime']
+					'exif-data': (result || false)
